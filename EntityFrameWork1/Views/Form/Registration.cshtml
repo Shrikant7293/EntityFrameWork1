@@ -1,0 +1,32 @@
+﻿@model Form
+
+
+
+
+<form method="post" asp-action="Registration" asp-controller="Form">
+	
+	<label asp-for="@Model.FirstName"></label>
+	<input type="text" asp-for="@Model.FirstName" class="form-control" />
+	<span asp-validation-for="@Model.FirstName" class="text-danger"></span>
+	
+	<br />
+
+	<label asp-for="@Model.LastName"></label>
+	<input type="text" asp-for="@Model.LastName" class="form-control" />
+	<span asp-validation-for="@Model.LastName" class="text-danger"></span>
+
+	<br />
+
+	<label asp-for="@Model.Course"></label>
+	<input type="text" asp-for="@Model.Course" class="form-control" />
+	<span asp-validation-for="@Model.Course" class="text-danger"></span>
+	
+	<br />
+
+	<label asp-for="@Model.PassingYear"></label>
+	<input type="text" asp-for="@Model.PassingYear" class="form-control" />
+
+	<br />
+
+	<button class="btn btn-primary">Submit</button>
+</form>
